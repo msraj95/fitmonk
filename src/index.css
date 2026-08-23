@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ink text-parchment font-body antialiased;
+  }
+
+  ::selection {
+    @apply bg-honey text-ink;
+  }
+
+  /* Visible keyboard focus everywhere — accessibility floor */
+  :focus-visible {
+    outline: 2px solid theme('colors.honey');
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply font-mono text-[11px] tracking-[0.25em] uppercase text-honey;
+  }
+
+  .seal {
+    @apply inline-flex items-center justify-center rounded-full border border-honey/60 text-honey font-mono text-[10px] tracking-[0.15em] uppercase;
+  }
+}
