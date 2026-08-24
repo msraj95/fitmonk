@@ -8,18 +8,16 @@
   }
 
   body {
-    @apply bg-ink text-parchment font-body antialiased;
+    @apply bg-white text-gray-900 font-body antialiased;
   }
 
   ::selection {
-    @apply bg-honey text-ink;
+    @apply bg-brand text-white;
   }
 
   /* Visible keyboard focus everywhere — accessibility floor */
   :focus-visible {
-    outline: 2px solid theme('colors.honey');
-    outline-offset: 3px;
-    border-radius: 2px;
+    @apply outline-2 outline-brand outline-offset-[3px] rounded-sm;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -36,10 +34,6 @@
 
 @layer components {
   .eyebrow {
-    @apply font-mono text-[11px] tracking-[0.25em] uppercase text-honey;
-  }
-
-  .seal {
-    @apply inline-flex items-center justify-center rounded-full border border-honey/60 text-honey font-mono text-[10px] tracking-[0.15em] uppercase;
+    @apply font-mono text-[11px] tracking-[0.25em] uppercase text-brand;
   }
 }
