@@ -1,5 +1,3 @@
-// const igHandle = import.meta.env.VITE_INSTAGRAM_HANDLE || 'heyfitmonk'
-
 import { Container } from '../Container';
 
 export const Footer = () => {
