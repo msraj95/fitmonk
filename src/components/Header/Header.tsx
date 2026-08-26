@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom';
 import { Container } from '../Container';
 import { Logo } from '../Logo/Logo';
+import { ROUTES } from '../../constants/routes';
 
 export const Header = () => {
   return (
@@ -9,23 +11,17 @@ export const Header = () => {
           <Logo />
 
           <nav className="hidden items-center gap-6 md:flex">
-            <a href="/" className="text-sm font-medium hover:text-green-700">
+            <Link to="/" className="text-sm font-medium hover:text-brand">
               Home
-            </a>
+            </Link>
 
-            <a
-              href="/shop"
-              className="text-sm font-medium hover:text-green-700"
-            >
+            <Link to="/shop" className="text-sm font-medium hover:text-brand">
               Shop
-            </a>
+            </Link>
 
-            <a
-              href="/about"
-              className="text-sm font-medium hover:text-green-700"
-            >
+            <Link to="/about" className="text-sm font-medium hover:text-brand">
               About
-            </a>
+            </Link>
           </nav>
 
           <div className="flex items-center gap-4">
@@ -33,13 +29,13 @@ export const Header = () => {
               Search
             </button>
 
-            <button
-              type="button"
+            <Link
+              to={ROUTES.CART}
               aria-label="Shopping cart"
               className="text-sm"
             >
               Cart
-            </button>
+            </Link>
           </div>
         </div>
       </Container>
