@@ -1,58 +1,94 @@
-export interface Product {
-  id: string
-  name: string
-  tagline: string
-  description: string
-  glyph: string // single glyph used in the product seal
-}
+import { Product } from '../types/productType';
 
-export const products: Product[] = [
+export const PRODUCTS: Product[] = [
   {
-    id: 'honey',
-    name: 'Raw Honey',
-    tagline: 'Unheated, uncut, straight from the comb',
+    id: 'premium-almonds',
+    name: 'Premium Almonds',
+    slug: 'premium-almonds',
+    category: 'dry-fruits',
     description:
-      'Cold-extracted and never pasteurised, so the enzymes and pollen stay intact. Comes in wildflower and mustard-blossom varieties depending on season.',
-    glyph: '⬡',
+      'Carefully selected premium almonds with a naturally rich and crunchy texture.',
+    price: 499,
+    compareAtPrice: 549,
+    image: '/images/products/almonds.jpg',
+    unit: '500g',
+    featured: true,
+    inStock: true,
   },
   {
-    id: 'dry-fruits',
-    name: 'Dry Fruits',
-    tagline: 'Almonds, cashews, walnuts, pistachios',
+    id: 'medjool-dates',
+    name: 'Medjool Dates',
+    slug: 'medjool-dates',
+    category: 'dates',
+    description: 'Naturally sweet and soft Medjool dates.',
+    price: 999,
+    image: '/images/products/medjool-dates.jpg',
+    unit: '500g',
+    featured: true,
+    inStock: true,
+  },
+  {
+    id: 'ajwa-dates',
+    name: 'Ajwa Dates',
+    slug: 'ajwa-dates',
+    category: 'dates',
+    description: 'Naturally sweet and soft Ajwa dates.',
+    price: 799,
+    image: '/images/products/ajwa-dates.jpg',
+    unit: '500g',
+    featured: true,
+    inStock: true,
+  },
+  {
+    id: 'natural-honey',
+    name: 'Natural Honey',
+    slug: 'natural-honey',
+    category: 'honey',
     description:
-      'Sorted and graded by hand, roasted in small batches with no added oil or salt unless you ask for it.',
-    glyph: '◆',
+      'Cold-extracted and never pasteurised, so the enzymes and pollen stay intact. Comes in wildflower and mustard-blossom varieties depending on season.',
+    price: 599,
+    image: '/images/products/honey.jpg',
+    unit: '500g',
+    featured: true,
+    inStock: true,
   },
   {
     id: 'muesli',
-    name: 'Muesli',
-    tagline: 'Rolled oats, seeds, and real dried fruit',
+    name: 'FitMonk Muesli',
+    slug: 'fit-monk Muesli',
+    category: 'muesli',
     description:
       'No refined sugar, no puffed filler. Just oats, nuts, seeds and fruit in a mix built to actually keep you full.',
-    glyph: '◈',
+    price: 699,
+    image: '/images/products/muesli.jpg',
+    unit: '500g',
+    featured: true,
+    inStock: true,
   },
   {
     id: 'talbina',
-    name: 'Talbina',
-    tagline: 'Barley porridge mix, ground fine',
+    name: 'Talbina Elaichi',
+    slug: 'talbina',
+    category: 'honey',
     description:
       'Whole barley, milled the traditional way and blended with milk powder and honey so it only needs hot water or milk.',
-    glyph: '◉',
-  },
-  {
-    id: 'dates',
-    name: 'Dates',
-    tagline: 'Ajwa, Medjool, and seasonal picks',
-    description:
-      'Sourced in small lots so quality doesn\u2019t drop with volume. Soft-textured, naturally sweet, no syrup dipping.',
-    glyph: '●',
+    price: 699,
+    image: '/images/products/talbina.jpg',
+    unit: '500g',
+    featured: true,
+    inStock: true,
   },
   {
     id: 'omani-barfi',
     name: 'Omani Barfi',
-    tagline: 'A Gulf-inspired take on a classic sweet',
+    slug: 'omani-barfi',
+    category: 'omani-barfi',
     description:
       'Milk-based barfi finished with saffron, cardamom and a scatter of pistachio \u2014 made in small trays, not on a factory line.',
-    glyph: '◇',
+    price: 699,
+    image: '/images/products/barfi.jpg',
+    unit: '500g',
+    featured: true,
+    inStock: true,
   },
-]
+];

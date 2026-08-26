@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import { Container } from '../../components/Container';
+import { ROUTES } from './../../constants/routes';
 
 export const Home = () => {
   return (
@@ -20,12 +22,12 @@ export const Home = () => {
             </p>
 
             <div className="mt-8">
-              <button
-                type="button"
+              <Link
+                to={ROUTES.SHOP}
                 className="rounded-lg bg-green-700 px-6 py-3 font-semibold text-white hover:bg-green-800"
               >
                 Shop Now
-              </button>
+              </Link>
             </div>
           </div>
         </Container>
