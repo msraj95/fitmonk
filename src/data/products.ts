@@ -55,7 +55,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'muesli',
     name: 'FitMonk Muesli',
-    slug: 'fit-monk Muesli',
+    slug: 'fitmonk Muesli',
     category: 'muesli',
     description:
       'No refined sugar, no puffed filler. Just oats, nuts, seeds and fruit in a mix built to actually keep you full.',
@@ -69,7 +69,7 @@ export const PRODUCTS: Product[] = [
     id: 'talbina',
     name: 'Talbina Elaichi',
     slug: 'talbina',
-    category: 'honey',
+    category: 'talbina',
     description:
       'Whole barley, milled the traditional way and blended with milk powder and honey so it only needs hot water or milk.',
     price: 699,
