@@ -1,0 +1,1 @@
+export const CATEGORIES = ['all','honey','dates','dry-fruits','muesli','talbina','omani-barfi'] as const;
